@@ -84,9 +84,9 @@ def seq_msp(fafile,seqfile,genome='mm9'):
 def main():
     usage = "usage: %prog [options] arg"
     parser = OptionParser(usage)
-    #parser.add_option("-n", action="store_true", dest="n")
-    #parser.add_option("--thres", dest="thres", type=float, default=0.7)
-    #parser.add_option("--dist", dest="dist", type=int, default=1)
+    #parser.add_option("--min_dist", dest="min_dist", type=int, default=40)
+    #parser.add_option("--max_dist", dest="max_dist", type=int, default=220)
+    parser.add_option("--genome", dest="genome", default='mm9')
     parser.add_option("--outfile", dest="outfile", default=None)
     (opts, args) = parser.parse_args()
     if len(args) != 1:
@@ -94,6 +94,6 @@ def main():
 
     a=args[0]
 
-    seq_msp(a,opts.outfile)
+    seq_msp(a,opts.outfile,genome=opts.genome)
 
 if __name__=='__main__': main()
