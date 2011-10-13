@@ -11,7 +11,7 @@ import chipsequtil
 from chipsequtil.nib import NibDB
 from TAMO.seq import Fasta
 
-def seq_msp(fafile,seqfile,genome='mm9'):
+def seq_msp(fafile,seqfile,genome='mm9',convert=True,bedFrag=False):
     start=-3
     hang='NNN'
 
@@ -52,7 +52,9 @@ def seq_msp(fafile,seqfile,genome='mm9'):
     #save each as a pair of Fasta items with keys chr:position(strand)
     seq_dict={}
     ids,loci=[],[]
+    BF=[]
     for x,y in FRAG:
+        if bedFrag: BF.append([ch,str(x+1),str(y+3)])
         #for x
         start=x+1
         stop=x+41
@@ -60,7 +62,7 @@ def seq_msp(fafile,seqfile,genome='mm9'):
         loc=(ch,start,stop,'+')
         ids.append(key)
         loci.append(loc)
-
+        
         #for y
         start=y-37
         stop=y+3
@@ -69,11 +71,13 @@ def seq_msp(fafile,seqfile,genome='mm9'):
         ids.append(key)
         loci.append(loc)
 
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s',delimiter='\t')
     if genome=='hg18':  DB=NibDB(nib_dirs='/nfs/genomes/human_gp_mar_06/')
     else:  DB=NibDB(nib_dirs=chipsequtil.get_org_settings('mm9')['genome_dir'])
     fa_ids,seqs=DB.get_fasta_batch(loci)
     for id,seq in zip(ids,seqs):
-        biseq=seq.replace('c','t')
+        if convert: biseq=seq.replace('c','t')
+        else: biseq=seq
         if id[-1]=='+':
             seq_dict[id]=biseq
         else:
@@ -86,14 +90,16 @@ def main():
     parser = OptionParser(usage)
     #parser.add_option("--min_dist", dest="min_dist", type=int, default=40)
     #parser.add_option("--max_dist", dest="max_dist", type=int, default=220)
+    parser.add_option("--convert", dest="convert", action="store_true", default=False)
     parser.add_option("--genome", dest="genome", default='mm9')
     parser.add_option("--outfile", dest="outfile", default=None)
+    parser.add_option("--bedFrag", dest="bedFrag", action="store_true", default=False)
     (opts, args) = parser.parse_args()
     if len(args) != 1:
         parser.error("incorrect number of arguments")
 
     a=args[0]
 
-    seq_msp(a,opts.outfile,genome=opts.genome)
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
 
 if __name__=='__main__': main()
