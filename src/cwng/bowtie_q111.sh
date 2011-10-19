@@ -1,0 +1,1 @@
+bowtie -p 4 -5 1 -l 15 -n 2 -k 2 -y --sam-nohead --chunkmbs 512 --best --strata --norc --phred64-quals -S ../../annot/mm9_msp1/mm9_msp1.ebwt ../../data/110929_RRBS111_convert.fastq ../../results/align/bowtie/110929_RRBS111_convert_align_2.sam

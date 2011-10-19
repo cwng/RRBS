@@ -1,0 +1,171 @@
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chrY_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr17_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr19_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr15_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr16_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr11_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr13_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr12_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr9_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr14_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr8_frag.bed'
+
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr10_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr5_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr7_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr6_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr3_frag.bed'
+Traceback (most recent call last):
+  File "find_msp_sites.py", line 105, in <module>
+    if __name__=='__main__': main()
+  File "find_msp_sites.py", line 103, in main
+    seq_msp(a,opts.outfile,genome=opts.genome,convert=opts.convert,bedFrag=opts.bedFrag)
+  File "find_msp_sites.py", line 74, in seq_msp
+    if bedFrag: np.savetxt(seqfile.replace('.fa','_frag.bed'),BF,fmt='%s')
+  File "/usr/local/lib/python2.6/site-packages/numpy/lib/npyio.py", line 940, in savetxt
+    fh = open(fname, 'w')
+IOError: [Errno 2] No such file or directory: '../../annot/mm9_msp1_no_convert/chr4_frag.bed'
